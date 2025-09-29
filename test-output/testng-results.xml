@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-29T22:38:11 IST" name="Default suite" finished-at="2025-09-29T22:38:19 IST" duration-ms="7704">
+    <groups>
+    </groups>
+    <test started-at="2025-09-29T22:38:11 IST" name="Default test" finished-at="2025-09-29T22:38:19 IST" duration-ms="7704">
+      <class name="UI.TestUI">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UI.TestUI@587e5365]" started-at="2025-09-29T22:38:11 IST" name="setUp" finished-at="2025-09-29T22:38:13 IST" duration-ms="2425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="openHomePage()[pri:0, instance:UI.TestUI@587e5365]" started-at="2025-09-29T22:38:13 IST" name="openHomePage" finished-at="2025-09-29T22:38:13 IST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openHomePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UI.TestUI@587e5365]" started-at="2025-09-29T22:38:13 IST" name="tearDown" finished-at="2025-09-29T22:38:19 IST" duration-ms="5218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- UI.TestUI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
