@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OpenCart Suite]">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="User Management Tests(failed)">
+    <classes>
+      <class name="UI.UserManagementTest">
+        <methods>
+          <include name="setUpTest"/>
+          <include name="testInvalidLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- UI.UserManagementTest -->
+    </classes>
+  </test> <!-- User Management Tests(failed) -->
+</suite> <!-- Failed suite [OpenCart Suite] -->

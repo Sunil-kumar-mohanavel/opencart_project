@@ -1,0 +1,11 @@
+<suite name="OpenCart Suite">
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+
+    <test name="User Management Tests">
+        <classes>
+            <class name="UI.UserManagementTest"/>
+        </classes>
+    </test>
+</suite>

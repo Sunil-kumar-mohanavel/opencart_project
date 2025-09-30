@@ -6,7 +6,7 @@ import Base.BaseTest;
 public class TestUI extends BaseTest {
 
     @Test
-    public void openHomePage() {
+    public void HomePage() {
         System.out.println("Browser opened successfully at: " + driver.getCurrentUrl());
     }
 }
