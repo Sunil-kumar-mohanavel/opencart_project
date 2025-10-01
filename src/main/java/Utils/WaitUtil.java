@@ -22,6 +22,8 @@ public class WaitUtil {
         this.driver = driver;
     }
 
+    // Instance Methods 
+
     // Explicit wait for element to be visible
     public WebElement waitForElementVisible(WebElement element, int timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
@@ -58,4 +60,31 @@ public class WaitUtil {
     public WebElement fluentWait(By locator) {
         return fluentWait(locator, DEFAULT_TIMEOUT, 500);
     }
+
+    // Static Methods 
+
+    // Wait for visibility of element by locator
+    public static WebElement waitForVisibility(WebDriver driver, By locator, int timeoutInSeconds) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    // Wait for visibility of WebElement
+    public static WebElement waitForVisibility(WebDriver driver, WebElement element, int timeoutInSeconds) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        return wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    // Wait for invisibility of element
+    public static boolean waitForInvisibility(WebDriver driver, WebElement element, int timeoutInSeconds) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        return wait.until(ExpectedConditions.invisibilityOf(element));
+    }
+    
+ // Wait for text of WebElement to change to expected value
+    public static boolean waitForTextChange(WebDriver driver, WebElement element, String expectedText, int timeoutInSeconds) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        return wait.until(ExpectedConditions.textToBePresentInElementValue(element, expectedText));
+    }
+
 }
