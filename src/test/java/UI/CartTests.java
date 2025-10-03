@@ -9,7 +9,7 @@ import Pages.HomePage;
 import Pages.LoginPage;
 
 public class CartTests extends BaseTest {
-
+ 
     private HomePage homePage;
     private LoginPage loginPage;
     private CartPage cartPage;

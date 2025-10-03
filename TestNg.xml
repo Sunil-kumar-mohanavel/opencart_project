@@ -3,9 +3,17 @@
         <listener class-name="listeners.TestListener"/>
     </listeners>
 
-    <test name="User Management Tests">
+    <test name="UI Tests">
+    
         <classes>
             <class name="UI.UserManagementTest"/>
+            
+            <class name="UI.ProductTests"/>
+            
+            <class name="UI.CartTests"/>
+            
+            <class name="UI.CheckoutTests"/>
+            
         </classes>
     </test>
 </suite>

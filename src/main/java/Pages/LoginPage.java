@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class LoginPage {
 
     private WebDriver driver;
-
+ 
     // Locators
     private By emailInput = By.id("input-email");
     private By passwordInput = By.id("input-password");

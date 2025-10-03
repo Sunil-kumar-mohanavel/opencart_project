@@ -7,7 +7,7 @@ import Utils.ElementUtil;
 
 public class HomePage {
 
-    private WebDriver driver;
+    private WebDriver driver; 
     private ElementUtil elementUtil;
 
     // Locators - My Account
