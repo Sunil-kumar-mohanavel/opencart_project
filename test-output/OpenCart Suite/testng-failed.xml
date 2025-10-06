@@ -6,14 +6,17 @@
   </listeners>
   <test thread-count="5" name="UI Tests(failed)">
     <classes>
-      <class name="UI.CartTests">
+      <class name="UI.ProductTests">
         <methods>
-          <include name="testRemoveFromCart"/>
+          <include name="setUpTest"/>
+          <include name="testSearchProduct"/>
+          <include name="testDeleteProduct"/>
+          <include name="testFilterProducts"/>
+          <include name="DB_PC_06_InvalidSearch"/>
           <include name="tearDown"/>
-          <include name="setupTest"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- UI.CartTests -->
+      </class> <!-- UI.ProductTests -->
     </classes>
   </test> <!-- UI Tests(failed) -->
 </suite> <!-- Failed suite [OpenCart Suite] -->

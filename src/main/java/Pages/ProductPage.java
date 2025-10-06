@@ -128,11 +128,19 @@ public class ProductPage {
     }
 
 
-    // Get success message
+ // Get success message with explicit wait
     public String getSuccessMessage() {
-        waitUtil.waitForElementVisible(driver.findElement(successMessage));
-        return driver.findElement(successMessage).getText();
+        try {
+            // Wait up to 10 seconds for success alert to appear
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebElement msg = wait.until(ExpectedConditions.visibilityOfElementLocated(successMessage));
+            return msg.getText();
+        } catch (Exception e) {
+            System.out.println("⚠️ Success message not found or took too long to appear.");
+            return "";
+        }
     }
+
 
     // Search product
     public void searchProduct(String name) {

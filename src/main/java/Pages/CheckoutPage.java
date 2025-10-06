@@ -64,7 +64,7 @@ public class CheckoutPage {
     private By orderhis = By.xpath("//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Order History']");
 
     
-    private By orderidclick = By.xpath("//a[contains(@href,'order_id=12') and contains(@class,'btn-info')]");
+    private By orderidclick = By.xpath("//a[contains(@href,'order_id=42') and contains(@class,'btn-info')]");
    
     
    // private By orderHistoryLink = By.linkText("Order History");
@@ -131,12 +131,16 @@ public class CheckoutPage {
     }
     
     
-    public void navigateToorderid() {
+   public void navigateToorderid() {
    	 driver.findElement(orderidclick).click();
    	 
    	 
       
-   }
+   } 
+    
+   
+
+
     
 
 

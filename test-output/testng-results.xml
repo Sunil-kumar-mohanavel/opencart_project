@@ -1,161 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-04T00:15:10 IST" name="Default suite" finished-at="2025-10-04T00:15:12 IST" duration-ms="1882">
+  <suite started-at="2025-10-06T23:15:11 IST" name="Default suite" finished-at="2025-10-06T23:15:53 IST" duration-ms="41138">
     <groups>
     </groups>
-    <test started-at="2025-10-04T00:15:10 IST" name="Default test" finished-at="2025-10-04T00:15:12 IST" duration-ms="1882">
-      <class name="API.UserAPITests">
-        <test-method signature="getusers()[pri:1, instance:API.UserAPITests@77f1baf5]" started-at="2025-10-04T00:15:10 IST" name="getusers" finished-at="2025-10-04T00:15:12 IST" duration-ms="1826" status="FAIL">
-          <exception class="java.net.ConnectException">
-            <message>
-              <![CDATA[Connection refused: connect]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.net.ConnectException: Connection refused: connect
-at java.base/sun.nio.ch.Net.connect0(Native Method)
-at java.base/sun.nio.ch.Net.connect(Net.java:589)
-at java.base/sun.nio.ch.Net.connect(Net.java:578)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-at java.base/java.net.Socket.connect(Socket.java:751)
-at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
-at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
-at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
-at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1480)
-at io.restassured.internal.RequestSpecificationImpl.this$2$sendHttpRequest(RequestSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
-at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1229)
-at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
-at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.FilterContext$next.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:89)
-at io.restassured.filter.Filter$filter.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:157)
-at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-at io.restassured.filter.FilterContext$next.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
-at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
-at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
-at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
-at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:172)
-at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-at API.UserAPITests.getusers(UserAPITests.java:13)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.net.ConnectException -->
+    <test started-at="2025-10-06T23:15:11 IST" name="Default test" finished-at="2025-10-06T23:15:53 IST" duration-ms="41138">
+      <class name="UI.ProductTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:12 IST" name="setUp" finished-at="2025-10-06T23:15:13 IST" duration-ms="1252" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getusers -->
-      </class> <!-- API.UserAPITests -->
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:13 IST" name="setUpTest" finished-at="2025-10-06T23:15:16 IST" duration-ms="2727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testAddProduct()[pri:1, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:16 IST" name="testAddProduct" finished-at="2025-10-06T23:15:17 IST" duration-ms="1629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:17 IST" name="tearDown" finished-at="2025-10-06T23:15:19 IST" duration-ms="2199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:19 IST" name="setUp" finished-at="2025-10-06T23:15:20 IST" duration-ms="880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:20 IST" name="setUpTest" finished-at="2025-10-06T23:15:23 IST" duration-ms="2787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testEditProduct()[pri:2, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:23 IST" name="testEditProduct" finished-at="2025-10-06T23:15:25 IST" duration-ms="1733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:25 IST" name="tearDown" finished-at="2025-10-06T23:15:27 IST" duration-ms="2195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:27 IST" name="setUp" finished-at="2025-10-06T23:15:28 IST" duration-ms="771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:28 IST" name="setUpTest" finished-at="2025-10-06T23:15:31 IST" duration-ms="2820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testSearchProduct()[pri:3, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:31 IST" name="testSearchProduct" finished-at="2025-10-06T23:15:31 IST" duration-ms="475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:31 IST" name="tearDown" finished-at="2025-10-06T23:15:33 IST" duration-ms="2188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:33 IST" name="setUp" finished-at="2025-10-06T23:15:34 IST" duration-ms="801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:34 IST" name="setUpTest" finished-at="2025-10-06T23:15:37 IST" duration-ms="3255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testFilterProducts()[pri:4, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:37 IST" name="testFilterProducts" finished-at="2025-10-06T23:15:38 IST" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFilterProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:38 IST" name="tearDown" finished-at="2025-10-06T23:15:40 IST" duration-ms="2211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:40 IST" name="setUp" finished-at="2025-10-06T23:15:41 IST" duration-ms="792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:41 IST" name="setUpTest" finished-at="2025-10-06T23:15:43 IST" duration-ms="2696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="DB_PC_06_InvalidSearch()[pri:5, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:43 IST" name="DB_PC_06_InvalidSearch" finished-at="2025-10-06T23:15:44 IST" duration-ms="379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DB_PC_06_InvalidSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:44 IST" name="tearDown" finished-at="2025-10-06T23:15:46 IST" duration-ms="2195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:46 IST" name="setUp" finished-at="2025-10-06T23:15:47 IST" duration-ms="819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:47 IST" name="setUpTest" finished-at="2025-10-06T23:15:50 IST" duration-ms="2781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testDeleteProduct()[pri:6, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:50 IST" name="testDeleteProduct" finished-at="2025-10-06T23:15:50 IST" duration-ms="809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:UI.ProductTests@79d8407f]" started-at="2025-10-06T23:15:50 IST" name="tearDown" finished-at="2025-10-06T23:15:53 IST" duration-ms="2224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- UI.ProductTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
