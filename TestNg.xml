@@ -1,19 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
 <suite name="OpenCart Suite">
     <listeners>
         <listener class-name="listeners.TestListener"/>
     </listeners>
 
-    <test name="UI Tests">
-    
+    <test name="UI and DB Tests">
         <classes>
             <class name="UI.UserManagementTest"/>
-            
             <class name="UI.ProductTests"/>
-            
             <class name="UI.CartTests"/>
-            
             <class name="UI.CheckoutTests"/>
-            
         </classes>
     </test>
 </suite>

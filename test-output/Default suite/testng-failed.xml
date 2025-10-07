@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="UI.ProductTests">
+      <class name="UI.UserManagementTest">
         <methods>
+          <include name="DB_UM_02_InvalidLoginCheck"/>
+          <include name="setUpSuite"/>
           <include name="setUpTest"/>
-          <include name="testDeleteProduct"/>
-          <include name="DB_PC_06_InvalidSearch"/>
+          <include name="DB_UM_03_NewUserRegistration"/>
+          <include name="DB_UM_01_VerifyCustomerLogin"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- UI.ProductTests -->
+      </class> <!-- UI.UserManagementTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

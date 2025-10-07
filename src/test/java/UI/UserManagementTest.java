@@ -57,7 +57,7 @@ public class UserManagementTest extends BaseTest {
             if (!warning.equals(expectedWarning)) {
                 // Capture screenshot for failure
                String screenshotPath = Utils.ScreenshotUtil.captureScreenshot(driver, "DB_UM_02_InvalidLoginCheck");
-                System.out.println("Screenshot captured due to UI warning mismatch");
+                System.out.println("Screenshot captured due to UI warning mismatch" +screenshotPath);
 
                 // Fail the test intentionally for invalid login scenario
                 Assert.fail("UI warning mismatch. Expected: '" + expectedWarning + "' but got: '" + warning + "'");
