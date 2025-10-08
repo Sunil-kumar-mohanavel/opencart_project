@@ -64,7 +64,7 @@ public class CheckoutPage {
     private By orderhis = By.xpath("//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Order History']");
 
     
-    private By orderidclick = By.xpath("//a[contains(@href,'order_id=49') and contains(@class,'btn-info')]");
+    private By orderidclick = By.xpath("//a[contains(@href,'order_id=52') and contains(@class,'btn-info')]");
    
     
    // private By orderHistoryLink = By.linkText("Order History");
