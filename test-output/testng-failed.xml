@@ -6,15 +6,6 @@
   </listeners>
   <test thread-count="5" name="UI and DB Tests(failed)">
     <classes>
-      <class name="UI.CheckoutTests">
-        <methods>
-          <include name="setUpSuite"/>
-          <include name="setupTest"/>
-          <include name="testReturn"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- UI.CheckoutTests -->
       <class name="UI.UserManagementTest">
         <methods>
           <include name="DB_UM_02_InvalidLoginCheck"/>
