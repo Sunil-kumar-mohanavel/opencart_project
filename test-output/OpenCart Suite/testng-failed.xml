@@ -6,15 +6,15 @@
   </listeners>
   <test thread-count="5" name="UI and DB Tests(failed)">
     <classes>
-      <class name="UI.UserManagementTest">
+      <class name="UI.CheckoutTests">
         <methods>
-          <include name="DB_UM_02_InvalidLoginCheck"/>
           <include name="setUpSuite"/>
-          <include name="setUpTest"/>
+          <include name="setupTest"/>
+          <include name="testReturn"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- UI.UserManagementTest -->
+      </class> <!-- UI.CheckoutTests -->
     </classes>
   </test> <!-- UI and DB Tests(failed) -->
 </suite> <!-- Failed suite [OpenCart Suite] -->
